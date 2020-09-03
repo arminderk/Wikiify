@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+
+    h1 #{pageTitle}: Edit History
+
+    .row
+        .col-xs-12.col-md-12
+            if history.length > 0
+                table.table
+                    thead
+                        tr
+                            th(scope='col') Change Description
+                            th(scope='col') Edited At
+                            th(scope='col') Diff
+                    tbody
+                        each log in history
+                            tr
+                                td #{log.description != '' ? log.description : 'No Changelog Entry'}
+                                td #{log.edited_at}
+                                td
+                                    a(href='/page/' + pageTitle + '/history/' + log.id + '/diff') Diff
+            else
+                .alert.alert-danger(role='alert')
+                    | No edit history for this page

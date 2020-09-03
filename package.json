@@ -1,0 +1,27 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "A wiki engine for Roon Labs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arminder Khinda",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "diff": "^4.0.2",
+    "diff2html": "^3.1.9",
+    "express": "^4.17.1",
+    "pug": "^3.0.0",
+    "showdown": "^1.9.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

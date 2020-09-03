@@ -1,0 +1,8 @@
+.DS_Store
+
+# Dependencies
+node_modules
+public/bower_components
+
+# DB File
+database.sqlite3

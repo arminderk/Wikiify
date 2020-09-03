@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    h1 Edit at #{historyResult.edited_at}
+
+    .row
+        .col-xs-12.col-md-12
+            | !{historyDiff}
+            

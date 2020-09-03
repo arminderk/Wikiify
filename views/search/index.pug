@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1 Search Results
+
+    if searchResults.length > 0
+        table.table
+            tbody
+                each result in searchResults
+                    tr
+                        td
+                            a(href='/page/' + result.title)
+                                h3 #{result.title}
+                        td 
+    else
+        .row
+            .col-xs-12.col-md-12    
+                .alert.alert-danger(role='alert')
+                    | No search results found for the query

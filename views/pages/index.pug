@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    .row
+        .col-xs-12.col-md-6
+            h1.mb-2 #{title}
+        .col-xs-12.col-md-6
+            ul.nav.mt-2
+                li.nav-item
+                    a.nav-link(href='/page/' + title + '/edit') Edit Page
+                if id != 0
+                    li.nav-item
+                        a.nav-link(href='/page/' + title + '/history') View History
+
+    .row
+        .col-xs-12.col-md-12.mt-3
+            if id == 0
+                .alert.alert-primary(role='alert')
+                    | This page doesn't exist yet.
+            else
+                | !{body}

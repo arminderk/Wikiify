@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    form(action='/page/' + id + '/update', method='POST')
+        .form-group.row
+            label.col-sm-2.col-form-label(for='title') Title:
+            .col-sm-6
+                input#title.form-control(type='text', name='title', value=title)
+            .col-sm-1
+            .col-sm-3
+                button.btn.btn-primary.mb-2.mr-4(type='submit') Save
+                a(href='/page/' + title) Cancel
+        .form-group.row
+            label.col-sm-2.col-form-label(for='description') Describe Change:
+            .col-sm-6
+                input#description.form-control(type='text', name='description')
+        .form-group.row.mt-5
+            textarea#pad.col-sm-5.form-control(name='body') #{body}
+            .col-sm-1
+            #markdown.col-sm-5
+
+block script
+    script(src='/js/markdown.js')
