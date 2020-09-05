@@ -8,6 +8,6 @@
 
 In order to run the app, simply type the commands below:\
     $ npm install\
-    $ npm start (or npm run dev to run nodemon))
+    $ npm start (or npm run dev to run nodemon)
     
-    open http://localhost:3000
+open localhost:3000
