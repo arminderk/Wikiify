@@ -6,7 +6,8 @@
 
 * Another note is that wiki links are created using the original markdown syntax: \[link_name\](url). In this case the url must contain: "/page/" to be able to navigate to a link
 
-In order to run the app, simply type the commands below:
-    $ npm install
-    $ npm start (or npm run dev to run nodemon)
-    $ open http://localhost:3000
+In order to run the app, simply type the commands below:\
+    $ npm install\
+    $ npm start (or npm run dev to run nodemon))
+    
+    open http://localhost:3000
