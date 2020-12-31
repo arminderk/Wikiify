@@ -1,4 +1,4 @@
-# Wiki Engine - Arminder Khinda
+# Wikiify
 
 * A database.sqlite3 file is required to save the data
 
