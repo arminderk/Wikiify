@@ -28,8 +28,7 @@ page.createTable()
     .then(() => page.createFTS()) // Create Full-Text Search Table
     .then(() => page.createFTSTriggers()) // Create Full-Text Search Triggers
     .then(() => edit_history.createTable()) // Create Edit History Table
-    .then(() => page.initializeMainPage() // Initialize Main Page
-    );
+    .then(() => page.initializeMainPage()); // Initialize Main Page
 
 // Start Routes
 router.get('/', (req, res) => res.redirect('/page/Main_Page'));
